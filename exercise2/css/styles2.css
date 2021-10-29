@@ -1,0 +1,101 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(205, 166, 241), rgb(105, 40, 180));
+}
+ 
+#content  {
+    background: white;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+ 
+    text-align: center;
+    padding: 40px;
+    border-radius: 5px;
+}
+ 
+#button {
+    color: red;
+}
+ 
+h1 {
+ 
+  text-shadow: 2px 2px;
+}
+ 
+
+#content  {
+    border-radius: 10%;
+  width: 300px;
+  height: 400px;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  background-color: rgb(47, 0, 255);
+  box-shadow: 15px 15px rgb(27, 26, 26);
+}
+#red {
+    color: red;
+    font-size: 60px; 
+}
+
+
+
+ 
+
+#ball {
+    position: relative;
+    align-items: center; 
+    margin: auto;
+    justify-content: center;  
+}
+
+
+#response {
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 1px 1px;
+    text-align: center;
+    position: relative ;
+    color:hsl(0, 100%, 50%);
+    bottom: 380px;
+   text-shadow: 2px 2px 4px white
+    
+}
+
+ #eightBall {
+
+        width: 350px;
+
+        height: 350px;
+
+        background: black;
+
+        color: white;
+position: relative;
+        margin: auto;
+
+       margin-bottom: 10px;
+        border-radius: 60%; 
+
+        /* display: grid; */
+
+        /* justify-content: center; */
+
+        align-items: center;
+
+    }
+    #whiteBall {
+    width: 175px;
+    height: 175px;
+     color: white;
+    background: white;
+      margin: auto;
+    border-radius: 60%;
+      position:  relative;
+     bottom: 270px;
+     
+    }
+    

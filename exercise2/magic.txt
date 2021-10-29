@@ -1,0 +1,173 @@
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Magic 8 Ball Project</title>
+
+<style type="text/css">
+
+    * {
+
+        font-family: sans-serif;
+
+    }
+
+    body {
+
+      background: linear-gradient(90deg, red, blue);  
+
+    }
+
+    #content {
+
+        background: white;
+
+        width: 400px;
+
+        margin: auto;
+
+        text-align: center;
+
+        padding: 20px;
+
+        border-radius: 5px;
+
+    }
+
+    #eightBall {
+
+        width: 350px;
+
+        height: 350px;
+
+        background: black;
+
+        color: white;
+
+        margin: auto;
+
+        margin-top: 10px;
+
+        border-radius: 100%; 
+
+        display: grid;
+
+        justify-content: center;
+
+        align-items: center;
+
+    }
+
+    #answer {
+
+        font-size: 25px;
+
+    }
+
+</style>
+
+***************************************************8
+//HTML
+<div id="content">
+
+    <h1>Magic Eight Ball</h1>
+
+    <h2>Type your question below:</h2>
+
+    <textarea name="" id="questionArea" cols="30" rows="4"></textarea>
+
+    <br>
+
+    <button>Shake!</button>
+
+    <div id="eightBall">
+
+        <p id="answer">Ask again later!</p>
+
+    </div>
+
+</div>
+**************************
+//js 
+
+<script src="" type="text/javascript">
+
+    // Create a random number function. 
+
+    function generate_random(max_number) {
+
+        // Generates a random number from 0 to max_number.
+
+        return Math.round(Math.random()*max_number);
+
+    }
+
+   // Select the elements on the page to interact with  
+
+   let button = document.querySelector("button");
+
+   let answer = document.querySelector("#answer");
+
+   // Add a click ev ent to the button
+
+   button.addEventListener("click", function() {
+
+       // Your procedure goes here.
+
+       // 0 -> "Yes definitely!"
+
+       // 1 -> "No, certainly not!"
+
+       // 2 -> "Ask again Later!"
+
+       // 3 -> "I really don't care!"
+
+       // General a random number
+
+        let randomNumber = generate_random(3);
+
+        
+
+       // Turn the random number into an answer using the key above.
+
+        let answerText = "";
+
+        if (randomNumber == 0) {
+
+            //Procedure to run if the condition is true.
+
+            answerText = "Yes Definitely!"
+
+        }
+
+        else if (randomNumber == 1) {
+
+            //Procedure to run if the condition is true.
+
+            answerText = "No, certainly not!"
+
+        }
+
+        else if (randomNumber == 2) {
+
+            //Procedure to run if the condition is true.
+
+            answerText = "Ask again later!"
+
+        }
+
+        else {
+
+            // Procedure to run no conditions are true.
+
+            answerText = "I really don't care!"
+
+        }
+
+       // Display the answer in the answer paragraph.
+
+       answer.innerHTML = answerText;
+
+    }); 
+
+</script>
